@@ -38,7 +38,8 @@ export default function Gallery({ images, galleryPath }: GalleryProps) {
         >
           <button
             aria-label="Close full-size image"
-            className="absolute top-4 right-4 h-10 w-10 rounded-full border-2 border-white text-white hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white transition flex items-center justify-center"
+            type="button"
+            className="absolute z-10 top-3 right-3 h-[60px] w-[60px] md:top-4 md:right-4 md:h-10 md:w-10 rounded-full border-2 border-white text-white hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white transition flex items-center justify-center"
             onClick={(e) => {
               e.stopPropagation();
               setSelectedImage(null);
@@ -47,7 +48,7 @@ export default function Gallery({ images, galleryPath }: GalleryProps) {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              className="h-6 w-6"
+              className="h-9 w-9 md:h-6 md:w-6"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
