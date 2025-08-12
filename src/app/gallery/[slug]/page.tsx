@@ -4,11 +4,13 @@ import { dogs } from "../../../dogs";
 import Link from "next/link";
 import Gallery from "../../../components/Gallery";
 
-export default async function GalleryPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+type Props = {
+  params: {
+    slug: string;
+  };
+};
+
+export default async function GalleryPage({ params }: Props) {
   const dog = dogs.find((d) => d.slug === params.slug);
 
   if (!dog) {
