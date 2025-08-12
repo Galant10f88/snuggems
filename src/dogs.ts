@@ -1,0 +1,37 @@
+export const dogs = [
+  {
+    name: "Buddy",
+    image: "/inlovingmemory/Buddy/profile.jpg",
+    message: "The best boy a person could ask for. I will love and miss you forever.",
+    slug: "buddy",
+    galleryPath: "/inlovingmemory/Buddy",
+  },
+  {
+    name: "Addy",
+    image: "/inlovingmemory/Friends/Addy/profile.JPG",
+    message: "A beautiful girl and Buddy's best friend. She will be loved and missed forever.",
+    slug: "addy",
+    galleryPath: "/inlovingmemory/Friends/Addy",
+  },
+  {
+    name: "Mr. Milo",
+    image: "/inlovingmemory/Friends/Milo/profile.jpg",
+    message: "A sweet and gentle soul who loved to cuddle. I think of you often.",
+slug: "milo",
+    galleryPath: "/inlovingmemory/Friends/Milo",
+  },
+  {
+    name: "Sahara",
+    image: "/inlovingmemory/Friends/sahara/baskin.jpg",
+    message: "This stinky breathed angel is still around today!",
+    slug: "sahara",
+    galleryPath: "/inlovingmemory/Friends/sahara",
+  },
+  {
+    name: "Friends",
+    image: "/inlovingmemory/Friends/pals/circle.jpg",
+    message: "Buddy with his friends through the years.",
+    slug: "other-friends",
+    galleryPath: "/inlovingmemory/Friends/pals",
+  },
+];
