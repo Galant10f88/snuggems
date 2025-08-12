@@ -5,13 +5,18 @@ import Link from "next/link";
 import Gallery from "../../../components/Gallery";
 
 type Props = {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 };
 
+export async function generateStaticParams() {
+  return dogs.map((dog) => ({
+    slug: dog.slug,
+  }));
+}
+
 export default async function GalleryPage({ params }: Props) {
-  const dog = dogs.find((d) => d.slug === params.slug);
+  const { slug } = await params;
+  const dog = dogs.find((d) => d.slug === slug);
 
   if (!dog) {
     return <div>Gallery not found</div>;

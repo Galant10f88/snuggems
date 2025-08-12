@@ -16,7 +16,7 @@ export const dogs = [
   {
     name: "Mr. Milo",
     image: "/inlovingmemory/Friends/Milo/profile.jpg",
-    message: "Aug 2008 - Oct.2021. A sweet and gentle soul who loved to cuddle. I think of you often.",
+    message: "Aug 2008 - Oct.14th 2021. A sweet and gentle soul who loved to cuddle. I think of you often.",
 slug: "milo",
     galleryPath: "/inlovingmemory/Friends/Milo",
   },
