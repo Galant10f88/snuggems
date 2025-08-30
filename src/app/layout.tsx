@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "In Loving Memory",
-  description: "Remembering my puppy.",
+  title: "Snuggems",
+  description: "My Wedding",
 };
 
 export default function RootLayout({
