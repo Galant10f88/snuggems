@@ -13,11 +13,11 @@ export default function Gallery({ images, galleryPath }: GalleryProps) {
 
   return (
     <div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((filename) => (
           <div
             key={filename}
-            className="relative h-80 w-full rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
+            className="relative h-48 md:h-80 w-full rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
             onClick={() => setSelectedImage(filename)}
           >
             <Image
